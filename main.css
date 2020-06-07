@@ -1,102 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
-        body{
-            margin: 0;    
-            padding: 0;
-            background:  rgb(223, 215, 112);
-            color: #ec3737;
-        }
-
-        
-        .hl{
-            font-size: 2.7em;
-            color: #ec3737;
-            text-align: center;
-        }
-
-        .themes{
-            display: inline-flex;
-            margin-left: 1%;
-            padding-left: 4.5em;
-            cursor: pointer;
-        }
-        
-        #nature{
-            width: 300px;
-            height: 190px;
-        }
-        #astrophysics{
-           width: 200px;
-           height: 200px;
-        }
-        .about{
-            background-color: white;
-        }
-        .FF{
-            margin-left: 14%;
-            width: 1000px;
-            height: 600px;
-
-        }
-
-        .bios{
-            display: inline-flex;
-            list-style-type: none;
-            cursor: pointer;
-        }
-
-        .bio-info{
-            display: none;
-            position: absolute;
-            color: black;
-            
-        }
+body{
+    margin: 0;    
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background:  rgb(223, 215, 112);
+    color: #ec3737;
+}
 
 
-        .sec2{
-            padding: 2em;
-            background: white;
-            
-            
-        }
-        .announcement{
-            font-size: 2.7em;
-            text-align: center;
-        }
-        .epTitle{
-            margin-left: 15%;
-            font-size: 1.5em;
-        }
-         .desc{
-            display: flex;
-        } 
-        figure img{
-            width: 200px;
-        }
-        figure{
-            cursor: pointer;
-            position: relative;
-            width: 300px;
-        }
-        
-        h2{
-            text-align: center;
-            color: black;
-        }
+.hl{
+    font-size: 2.7em;
+    color: #ec3737;
+    text-align: center;
+}
 
-        .bottom{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
-            z-index: 2;
-            width: 200px;
-            position: absolute;
-            opacity: 0;
-            -webkit-transition: opacity 1s ease-in-out; 
-            -moz-transition: opacity 1s ease-in-out;
-            -o-transition: opacity 1s ease-in-out;
-            transition: opacity 1s ease-in-out;
-        }
-        .top{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
-            z-index: 3;
-            -webkit-transition: opacity 1s ease-in-out;
-            -moz-transition: opacity 1s ease-in-out;
-            -o-transition: opacity 1s ease-in-out;
-            transition: opacity 1s ease-in-out;
-        }
+.themes{
+    display: inline-flex;
+    margin-left: 1%;
+    padding-left: 4.5em;
+    cursor: pointer;
+}
+
+#nature{
+    width: 300px;
+    height: 190px;
+}
+#astrophysics{
+    width: 200px;
+    height: 200px;
+}
+.about{
+    background-color: white;
+}
+.FF{
+    margin-left: 14%;
+    width: 1000px;
+    height: 600px;
+
+}
+
+.bios{
+    display: inline-flex;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.bio-info{
+    display: none;
+    position: absolute;
+    color: black;
+    font-size: 0.8em;
+    
+}
+
+
+.sec2{
+    padding: 2em;
+    background: white;
+    
+    
+}
+.announcement{
+    font-size: 2.7em;
+    text-align: center;
+}
+.epTitle{
+    margin-left: 15%;
+    font-size: 1.5em;
+}
+    .desc{
+    display: flex;
+} 
+figure img{
+    width: 200px;
+}
+figure{
+    cursor: pointer;
+    position: relative;
+    width: 300px;
+}
+
+h2{
+    text-align: center;
+    color: black;
+}
+
+.bottom{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
+    z-index: 2;
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out; 
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.top{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
+    z-index: 3;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
