@@ -2,93 +2,34 @@
         body{
             margin: 0;    
             padding: 0;
-            background:  #d9b08c;
-            color: #2c3531;
-        }
-        .navbar{
-            display: inline-flex;
-            margin-left: 8%;
-            list-style-type: none;
-        }
-        .hyperl{
-            text-decoration: none; 
-            color: #d9b08c;
-            padding: 2.3em;
-            font-size: 3em;
-        }
-        footer .hyperl{
-            padding-bottom: 0em;
-        }
-        .hyperl:hover{
-            background:  #d9b08c;
-            color: #116466;
+            background:  rgb(223, 215, 112);
+            color: #ec3737;
         }
 
-        .head, footer{
-            width: 100%; 
-            background: #116466;
-            border: none;
-        }
+        
         .hl{
-            font-size: 2em;
-            color: #d9b08c;
+            font-size: 2.7em;
+            color: #ec3737;
             text-align: center;
         }
+
         .themes{
             display: inline-flex;
-            margin-left: 6%;
-            padding-left: 1.5em;
-        }
-        button a{
-            text-decoration: none;  
-        }
-        .top{
-            width: 100%; 
-            background-color: rgb(179, 68, 4);
-            border: none;
-        }
-        .pull-left{
-            text-decoration: none; 
-            font-size: 3em; 
-            color:  rgb(216, 178, 91);
+            margin-left: 1%;
+            padding-left: 4.5em;
+            cursor: pointer;
         }
         
-        
-        
-        a:hover {
-            text-decoration: none;
-           }
-
-        
-        a{
-            color: white;
-        }
-        #animals{
-            border-radius: 20px; 
-            font-size: 2.5em; 
-            background: rgb(75, 59, 7);
-            color: black;
-        }
         #nature{
-            border-radius: 20px; 
-            font-size: 2.5em; 
-            background: rgb(5, 88, 9);
-            color: black;
-        }
-        #chemistry{
-            border-radius: 20px; 
-            font-size: 2.5em; 
-            background: rgb(29, 72, 212);
-            color: black;
+            width: 300px;
+            height: 190px;
         }
         #astrophysics{
-            border-radius: 20px; 
-            font-size: 2.5em; 
-            background: rgb(75, 8, 131);
-            color: black;
+           width: 200px;
+           height: 200px;
         }
-        .navbar{
-            border: none;
+        .about{
+            background-color: white;
         }
         .FF{
             margin-left: 14%;
@@ -96,10 +37,25 @@
             height: 600px;
 
         }
+
+        .bios{
+            display: inline-flex;
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        .bio-info{
+            display: none;
+            position: absolute;
+            color: black;
+            
+        }
+
+
         .sec2{
-            padding: 4em;
-            /* background: #2c3531; */
-            background: #116466;
+            padding: 2em;
+            background: white;
+            
             
         }
         .announcement{
@@ -110,9 +66,37 @@
             margin-left: 15%;
             font-size: 1.5em;
         }
-        .eduvids{
-            margin-left: 27%;
+         .desc{
+            display: flex;
+        } 
+        figure img{
+            width: 200px;
         }
-        .ev{
-            padding: 1em;
+        figure{
+            cursor: pointer;
+            position: relative;
+            width: 300px;
+        }
+        
+        h2{
+            text-align: center;
+            color: black;
+        }
+
+        .bottom{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
+            z-index: 2;
+            width: 200px;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: opacity 1s ease-in-out; 
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+        }
+        .top{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
+            z-index: 3;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
