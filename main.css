@@ -57,9 +57,6 @@ body{
 
 .sec2{
     padding: 2em;
-    background: white;
-    
-    
 }
 .announcement{
     font-size: 2.7em;
@@ -69,7 +66,7 @@ body{
     margin-left: 15%;
     font-size: 1.5em;
 }
-    .desc{
+.desc{
     display: flex;
 } 
 figure img{
@@ -87,7 +84,7 @@ h2{
 }
 
 .bottom{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
-    z-index: 2;
+    z-index: 0;
     width: 200px;
     position: absolute;
     opacity: 0;
@@ -97,7 +94,7 @@ h2{
     transition: opacity 1s ease-in-out;
 }
 .top{ /* reference: http://css3.bradshawenterprises.com/cfimg/ */
-    z-index: 3;
+    z-index: 1;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
