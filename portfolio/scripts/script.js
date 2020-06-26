@@ -1,5 +1,4 @@
 
-var all_elements = [document.getElementById("about"), document.getElementById("projects"), document.getElementById("contact")]  
 $(document).ready(function(){
     $(window).scroll(function() { // check if scroll event happened
     var currentPos = $(window).scrollTop();
