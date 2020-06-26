@@ -196,4 +196,6 @@ span{
   .get-in-touch{
       padding-top: ;
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
