@@ -1,0 +1,223 @@
+body{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.text{
+    text-decoration: none;
+    display: block;
+    width: 20%;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+p{
+    font-family: sans-serif;
+    width: 70%;
+    line-height:2;
+}
+
+input{
+    font-family: sans-serif;  
+}
+
+nav{
+    display: flex; /*flexes items horizontally*/
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #882D61;
+    padding: 0px 5%;
+}
+
+nav ul{
+    height: 60px;
+    display: flex;
+    
+}
+ /* background turns lighter while being hovered over */
+li:hover{
+    display: inline;
+    position: relative;
+    justify-content: space-between;
+    background-color: #CD88AF;
+}
+
+nav ul li a{
+    margin: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: stretch;
+    color: #FFFFFF;
+    width: auto;
+    font-size: 20px;
+    font-weight: 700;
+    /* cursor: pointer; */
+}
+
+.bg{
+    background-image: url('images/background.jpg');
+}
+
+.bgl1{
+    background-image: url('images/backgroundL1.jpg');
+}
+
+.bgl2{
+    background-image: url('images/backgroundL2.jpg');
+}
+
+.bgd1{
+    background-image: url('images/backgroundD1.jpg');
+}
+
+.bgd2{
+    background-image: url('images/backgroundD2.jpg');
+}
+
+section{
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    position: relative;
+}
+
+object, img{
+    border-style: solid;
+    border-color: #272426;
+    border-width: 15px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.page-content{
+    border-radius: 10px;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    position: relative;
+    top: 9vh;   
+}
+.about-page-content{
+    background-color:white;
+    border-radius: 10px;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    top: 9vh;  
+}
+/* about page text */
+.about-text{
+    top: 3%;
+    font-size: 14px;
+    position: relative;
+    left: 13%;
+    font-family: Courier;
+
+}
+.contact-text{
+    font-size: 25px;
+    position: relative;
+    left: 35%;
+    font-family: Courier;
+}
+.authors{
+    font-family: Courier;
+    left: 15%;
+    top: 6%;
+    position: relative;
+    font-size: 20px;
+}
+.email-info{
+    font-family: Courier;
+}
+.contact-page-content{
+    background-color: white;
+    border-radius: 10px;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+    position: relative;
+    top: 9vh;  
+}
+.start-button-container{
+    background-color: #661141;
+    width: 115px;
+    border-radius: 5px;
+    height: auto;
+    font-size: 24px;
+    position: relative;
+    left: 43%;
+}
+.next-button-container{
+    background-color: #661141;
+    width: 110px;
+    border-radius: 5px;
+    height: auto;
+    font-size: 24px;
+    position: relative;
+    left: 43%;
+    top: 25%;
+    padding-left: 10px;
+}
+.option-button-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 25%;
+}
+.button-choice{
+    background-color: #661141;
+    width: 20%;
+    border-radius: 5px;
+    height: auto;
+    font-size: 24px;
+    position: relative;
+    padding-left: 25px;
+    top: 25%;
+}
+
+.option-one-button{
+    top: -35%;
+    left: 55%;
+}
+
+.option-two-button{
+    top: -20%;
+    left: 55%;
+}
+
+.two-img img{
+    width: 30vw;
+    height: 70vh;
+    margin-top: 5%;
+    margin-left: 9%;
+    margin-right: 7%;
+}
+
+.text:hover, .two-img img:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+
+.caption{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 22%;
+    margin-right: 16%;
+}
