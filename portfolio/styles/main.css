@@ -16,6 +16,14 @@ body{
     position: relative;
     text-shadow: 2px 2px black;
 }
+::selection {
+    background: #1a1a1a; 
+    color: #02d463;
+  }
+::-moz-selection {
+    background: #1a1a1a; 
+    color: #02d463;
+  }
 .bg{
     position: fixed;
     top: 50%;
@@ -162,6 +170,18 @@ span{
     color: #02d463;
 }
 
+.about-skill{
+    padding-bottom: 1em;
+}
+.skill-img{
+    padding-bottom: 0.3em;
+}
+.skill-name{
+    transition: 0.5s;
+}
+.skill-name:hover{
+    color: #02d463;
+}
 .tech{
     margin-left: 7%;
     display: inline-block;
@@ -225,14 +245,16 @@ span{
   
   /* Style the front side (fallback if image is missing) */
   .flip-box-front {
-    background-color: black;
+    background-color: #1a1a1a;
+    filter:drop-shadow(8px 8px 10px black);
   }
   
   /* Style the back side */
   .flip-box-back {
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
     transform: rotateY(180deg);
+    filter:drop-shadow(8px 8px 10px black);
   }
   .flip-box-back h3{
       position: relative;
@@ -250,6 +272,9 @@ span{
 
   button{
     filter:drop-shadow(8px 8px 10px black);
+  }
+  button:hover{
+      filter: none;
   }
 
   .sidenav {
@@ -318,6 +343,13 @@ span{
   .home, .about, .projects, .contact, .footer{
     filter:drop-shadow(8px 8px 10px black);
   }
+  .footer{
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }
   
   
   /* Style page content */
@@ -325,6 +357,9 @@ span{
   
 
   @media only screen and (max-width:680px){
+      .description{
+          width: 90%;
+      }
       .sidenav li {
           padding: 2.5em 1em;
       }
@@ -338,8 +373,9 @@ span{
           width: 320px !important;
       }
       h3{
-          width: 70%;
+          width: 90%;
       }
+      
       .desc{
         width: 90%;
         margin: auto;

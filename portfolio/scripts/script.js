@@ -32,4 +32,5 @@ $(document).ready(function(){
   social.addEventListener('mouseleave', () => {
     socialTitle.innerHTML = "Social";
   })
+console.log("Want to see how everything on this website was made? Check out my github!")
 
