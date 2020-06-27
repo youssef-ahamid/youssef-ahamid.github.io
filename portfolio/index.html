@@ -18,14 +18,14 @@
      <title> Youssef </title>
      <!-- <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD9/f0AAAAAAAkJCQD///8AAgICAAsLCwD8/PwACAgIAP7+/gABAQEAAwMDAPT09AAAAAAAAAAAAAAAAAAAAAAAERERmZmRkRERERMzMzgRERERGDMzMxEREREVIiMzERERERcIiDOhERERGDMzMxERERETMwYzERERERMzGDMREREREzMYMxERERETMxgzERERERMzGDMREREREzOYMxERERETMzMzEREREZgzMzMRERERQbMzMJEREREXkRERERHwBwAA8AcAAPAHAADwBwAA8AcAAPAHAADwBwAA8AcAAPAHAADwBwAA8AcAAPAHAADwBwAA8AcAAPAHAAD4BwAA" rel="icon" type="image/x-icon" /> -->
    </head>
-   <body data-spy ="scroll" data-target=".navbar" data-offset=50>
+   <body data-spy ="scroll" data-target="#nav" data-offset=50>
      <img src="assets/images/bg.jpg" alt="bg" class="bg">
      <nav class="navbar navbar-expand-sm  justify-content-end fixed-top" id="nav"> 
       <a class="mr-auto" href="#">Youssef</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <img id="open-menu" src ="menu-icon.png" class="icon-menu"></img>
+      
+
+      <div class=" hide-mobile flex-grow-0" id="navbarSupportedContent">
           <ul class="navbar-nav text-right" >
               <li class="nav-item ">
                   <a class="nav-link " href="#about">About</a>
@@ -46,6 +46,26 @@
           </ul>
       </div>
   </nav>
+  <nav class="sidenav" id="sidenav" >
+    <ul class="list-group side-nav-list " id="nav">
+      <li>
+          <a class="list-group-item side-nav-link " href="#about">About</a>
+      </li>
+      <li >
+          <a class="list-group-item side-nav-link " href="#projects">Projects</a>
+      </li>
+      <li>
+        <a class=" list-group-item side-nav-link " href="#contact">Get In Touch</a>
+    </li>
+    <li>
+      <div class="icon-wrapper">
+      
+      <a class="" href="https://github.com/youssef-ahamid" target="_blank""><img src="assets/images/icons/github_green.png" alt="git" class="icon bottom side-nav-link"></a>
+      <a class="" href="https://github.com/youssef-ahamid" target="_blank""><img src="assets/images/icons/github.png" alt="git" class="icon top side-nav-link"></a>
+    </div>
+    </li>
+  </ul>
+</nav>
 
       <div class="home" id="home">
       <h3 class="green">Hello World, I am</h3>

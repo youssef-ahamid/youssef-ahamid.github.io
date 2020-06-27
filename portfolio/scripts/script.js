@@ -10,4 +10,17 @@ $(document).ready(function(){
     });
   });
 
+  var sidenavTrigger =  document.getElementById("open-menu");
+
+  sidenavTrigger.addEventListener('click', () => {
+    var sidenav = document.getElementById("sidenav");
+    if(sidenav.style.display == '' || sidenav.style.display == 'none'){
+      sidenav.style.display ='initial';
+      sidenavTrigger.src = "exit.png";
+    } else{
+      sidenav.style.display = 'none';
+      sidenavTrigger.src = "menu-icon.png";
+    }
+  });
+
 
