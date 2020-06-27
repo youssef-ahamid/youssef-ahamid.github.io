@@ -299,6 +299,14 @@ span{
     border: none !important;
     transition: 0.5s;
   }
+  .logo{
+      width: 100px;
+      left: 5%;
+  }
+  .logo-container{
+      position: absolute;
+      left: 5%;
+  }
   
   
   /* Style page content */
@@ -306,9 +314,9 @@ span{
   
 
   @media only screen and (max-width:680px){
-      /* .home{
-          margin-top: 25%;
-      } */
+      .sidenav li {
+          padding: 2.5em 1em;
+      }
       .flip-box{
         width: 80% !important;
         height: 80% !important;

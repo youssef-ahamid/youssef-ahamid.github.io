@@ -23,4 +23,13 @@ $(document).ready(function(){
     }
   });
 
+  var social = document.getElementById("social");
+  var socialTitle = document.getElementById("socialTitle");
+
+  social.addEventListener('mouseenter', () => {
+    socialTitle.innerHTML = "Socially Awkward";
+  })
+  social.addEventListener('mouseleave', () => {
+    socialTitle.innerHTML = "Social";
+  })
 
