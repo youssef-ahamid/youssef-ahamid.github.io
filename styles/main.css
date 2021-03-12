@@ -1,130 +1,411 @@
 @font-face {
-  font-family: 'PricedownBl-Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('PricedownBl-Regular'), url('pricedown bl.woff') format('woff');
-  }
+    font-family: 'Menlo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Menlo Regular'), url('fonts/Menlo-Regular.woff') format('woff');
+    }
 
 body{
-  margin: 0em;
-  padding: 0em;
-  background-color: black;
-  cursor: url('Unavailable.cur'), auto;
+    font-family:'Menlo Regular';
+    font-weight:normal;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    text-shadow: 2px 2px black;
 }
-
-.srs{
-  position: absolute;
-  top: 50%;
+::selection {
+    background: #1a1a1a; 
+    color: #02d463;
+  }
+::-moz-selection {
+    background: #1a1a1a; 
+    color: #02d463;
+  }
+.bg{
+    position: fixed;
+    top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+.social-media-lis{
+    top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-p{
-  font-family:'PricedownBl-Regular';
-  -webkit-text-stroke: 2px black;
-  font-size: 3.5vw;
+.green{
+    color: #02d463;
 }
-.bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  max-width: 100%;
-  max-height: 100%;
+.home{
+    margin-top: 190px;
+    padding-bottom: 2em;
 }
-li{
-  height: 5vw;
-  padding: 0 1em;
-
+.get-in-touch, .about, .projects{
+    padding: 6em 0;
 }
-a{
-  width: 15vw;
+h1{
+    font-size: 56px;
+    margin-left: 7%;
+    color: white;
+    padding-bottom: .3em;
 }
-
-#play {
-  display: block;
-  border-radius: 10px;
-  margin: auto;
-  text-align:center;
-  -webkit-transition:0.5s;
-  transition:0.5s;
-  color:#bf5909;
-  cursor: url('cursor.cur'), auto;
+h2{
+    margin-left: 7%;
+color: white;
+padding-bottom: 1.5em;
 }
-
-#play:hover {
-  background:#8900e1;
-  /* background:#ffc107; */
-  -webkit-transform:rotate(-1deg);
-  transform:rotate(-2deg);
+h3{
+    margin-left: 7%;
+color: white;
+    width: 30%;
+    font-size: 14px;
+    padding-bottom: 3em;
+    line-height: 2em;
+}
+nav{
+    filter:drop-shadow(8px 8px 10px black);
+    transition: background-color 0.5s;
 }
 
-#credits:hover {
-  background:#8900e1;
-  -webkit-transform:rotate(-2deg);
-  transform:rotate(-2deg);
-}
+.navbar-toggler-icon{
+    background-image: url('menu-icon.png')!important;
+    z-index: 6001 !important;
+    }
 
-a{
-  color: inherit;
-  -webkit-text-stroke: 2px black;
-}
-a:hover{
-  color: inherit;
-  text-decoration: none;
-  cursor: url('cursor.cur'), auto;
-}
 
-#glitches:hover {
-  background:#8900e1;
-  -webkit-transform:rotate(-2deg);
-  transform:rotate(-2deg);
-
+.get-in-touch{
+    margin-top: 2%;
+    background-color: transparent;
+    
 }
-
-#play p {
-  position:relative;
+.contact{
+       color: #02d463; 
 }
-
-#credits {
-  display: block;
-  border-radius: 10px;
-  margin-top: 6%;
-  text-align:center;
-  -webkit-transition:0.5s;
-  transition:0.5s;
-  color:#bf5909;
-  cursor: url('cursor.cur'), auto;
-}
-
-#glitches {
-  display: block;
-  border-radius: 10px;
-  text-align:center;
-  -webkit-transition:0.5s;
-  transition:0.5s;
-  color:#bf5909;
-  cursor: url('cursor.cur'), auto;
-}
-
-#glitches p {
-  position:relative;
-}
-
-#credits p {
-  position:relative;
-}
-
-@media only screen and (max-width: 600px){
-  p, a{
-    -webkit-text-stroke: 1px black;
+.nav-link {
+    color: white !important;
+    filter:drop-shadow(8px 8px 10px black);
+  padding-right: 3em !important;
+  
   }
+  .navbar-brand {
+    padding: 0;
+  }
+  .navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .nav-link.active, .nav-link:hover {
+    color: #02d463 !important;
+    transition: 0.5s;
+  }
+  .navbar-brand{
+      padding: 0em !important;
+  }
+  .icon-wrapper {
+    position:relative;
+    width:48px;
+    height: 48px;
+    margin:0 auto;
+    
+  }
+  .icon-wrapper .flex-child{
+      padding-right: 30em !important;
+  }
+  
+  .icon-wrapper .icon {
+    position: absolute !important;;
+    left:0 !important;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 48px;
+  }
+  
+  .icon-wrapper .icon.top:hover {
+    opacity:0;
+  }
+
+
+
+.show-mobile{
+    display: none;
 }
 
-@media only screen and (max-height: 320px){
-  p, a{
-    font-size: 12vh;
+
+
+
+.flex-parent {
+    display: inline-flex;
   }
-  li{
-    height: 15vh;
-  }
+.social-media{
+    width: 20%;
 }
+.skill-img{
+    width: 15px;
+}
+span{
+    color: white;
+}
+
+.action{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    background-color: #02d463;
+    color: white;
+    border: 2px solid #02d463
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.action:hover{
+    background-color: transparent;
+    color: #02d463;
+}
+
+.about-skill{
+    padding-bottom: 1em;
+}
+.skill-img{
+    padding-bottom: 0.3em;
+}
+.skill-name{
+    transition: 0.5s;
+}
+.skill-name:hover{
+    color: #02d463;
+}
+.tech{
+    margin-left: 7%;
+    display: inline-block;
+    
+}
+.proj{
+    padding-bottom: 4em;
+}
+.portrait{
+    width: 400px;
+    float: right;
+   padding-right: 8em;
+}
+
+.project{
+    width: 400px;
+    padding-bottom: 8em;
+}
+.all-projects{
+    margin-left: 7%;
+    
+}
+.all-projects  h3{
+    width: 70%;
+}
+
+.projects button{
+    margin: auto;
+}
+.flip-box {
+    background-color: transparent;
+    width: 400px;
+    height: 220px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .portrait{
+    filter:drop-shadow(8px 8px 10px black);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #1a1a1a;
+    filter:drop-shadow(8px 8px 10px black);
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: #1a1a1a;
+    color: white;
+    transform: rotateY(180deg);
+    filter:drop-shadow(8px 8px 10px black);
+  }
+  .flip-box-back h3{
+      position: relative;
+      width: 70%;
+      margin: auto;
+      margin-top: 20%;    
+  }
+
+  .get-in-touch{
+      padding-top: ;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button{
+    filter:drop-shadow(8px 8px 10px black);
+  }
+  button:hover{
+      filter: none;
+  }
+
+  .sidenav {
+    display: none;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 180px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 50; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111111 !important;
+    transition: display ease-in-out; /* Black */
+    filter:drop-shadow(8px 8px 10px black);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px;
+  }
+  .icon-menu{
+      background: transparent;
+      float: right;
+      margin-right: 5%;
+      width: 40px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav li {
+    padding: 3em 1em;
+    text-decoration: none !important;
+    background: transparent;
+    
+    display: block;
+  }
+  .sidenav a{
+      text-decoration: none !important;
+      font-size: 14px;
+    color: white !important;
+    background: transparent;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #02d463 !important;
+   
+    transition: 0.5s;
+  }
+  .sidenav a.active{
+    color: #02d463 !important;
+    background-color: transparent !important;
+    border: none !important;
+    transition: 0.5s;
+  }
+  .logo{
+      width: 100px;
+      left: 5%;
+  }
+  .logo-container{
+      position: absolute;
+      left: 5%;
+  }
+  .email{
+      color: white;
+  }
+  .email:hover{
+      color: #02d463;
+      text-decoration: none;
+  }
+
+  .home, .about, .projects, .contact, .footer{
+    filter:drop-shadow(8px 8px 10px black);
+  }
+  .footer{
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }
+  
+  
+  /* Style page content */
+  
+  
+
+  @media only screen and (max-width:680px){
+      .description{
+          width: 90%;
+      }
+      .sidenav li {
+          padding: 2.5em 1em;
+      }
+      .flip-box{
+        width: 80% !important;
+        height: 80% !important;
+        margin: auto;
+        padding-bottom: 12em;
+      }
+      .project{
+          width: 320px !important;
+      }
+      h3{
+          width: 90%;
+      }
+      
+      .desc{
+        width: 90%;
+        margin: auto;
+    }
+      .action{
+          margin: auto !important;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      .copyright{
+        width: 80%; 
+        margin: auto !important;
+        position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+      .footer{
+          width: 100%;
+          height: 6em;
+          
+      }
+      .hide-mobile{
+          display: none;
+      }
+      .show-mobile{
+          display: initial;
+      }
+      .home{
+          padding-bottom: 3em;
+      }
+  }

@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'pauseMenuFont';
+  src: url('../assets/fonts/ChaletLondonNineteenSixty.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+
+@media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+#warning-message {
+  margin-top: 50px;
+  font-family: pauseMenuFont;
+}
+
+body{
+  /*cursor: url('Unavailable.cur'), auto;*/
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.mfCursor {
+  cursor: url('cursor.cur'), auto;
+}
+.punchCursor {
+  cursor: url('Unavailable.cur'), auto;
+}
+.noCursor {
+  cursor: none;
+}
+
+.video-overlay {
+  pointer-events: none;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.video-container > video {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    height: 100%;
+  }
+}
+@media screen and (min-aspect-ratio: 1920/1080) {
+  .video-container > video {
+    width: 100%;
+  }
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.pauseMenuContainer {
+  pointer-events: none;
+  display: none;
+  opacity:0;
+  z-index: 4;
+  position: absolute;
+  width:80%;
+  min-width: 100px;
+  left:10%;
+  background: rgb(0,0,0,0);
+  overflow-y: auto;
+  top: 5px;
+}
+@media (max-width: 768px) {
+    body {
+      max-height: auto;
+      overflow: auto;
+    }
+  }
+@media (min-width: 801px) {
+
+  .pauseMenuContainer {
+    display: none;
+    opacity:0;
+    z-index: 4;
+    position: absolute;
+    width:80%;
+    min-width: 100px;
+    left:10%;
+    background: rgb(0,0,0,0);
+    overflow-y: auto;
+    top: 50px;
+  }
+}
+
+nav > .nav.nav-tabs{
+    border: none;
+    color:#fff;
+    background: rgb(0,0,0,0);
+    border-radius:0;
+    padding:0;
+}
+
+.nav-tabs > .nav-link {
+    background: rgb(0,0,0,0.7);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-link {
+  padding:2px;
+  color: white;
+  margin-top:5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-family: pauseMenuFont;
+}
+
+.nav-link:hover {
+  color: white;
+  background: rgb(0,0,0,0.5);
+  cursor: url('cursor.cur'), auto;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: black;
+    background: rgb(255,255,255,0.7);
+    box-shadow: 0 -5px 0 0 #ACECAA;
+    border: none;
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+
+.tab-pane {
+
+  color: white;
+  padding: 6px;
+  font-family: pauseMenuFont;
+}
+
+.mapHolder {
+  background: rgb(0,0,0,0.05) !important;
+}
+
+.pauseMenuTitle {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: pauseMenuFont;
+  text-shadow: 0px 0px 4px black;
+  color: white;
+  margin-bottom: 5px;
+  letter-spacing: 0.01em;
+  padding: 0;
+}
+
+.pauseMenuMapImage {
+ -webkit-filter: drop-shadow(0 0 50px #222);
+ filter: drop-shadow(0 0 50px #222);
+}
+
+.resume-button:hover {
+  cursor:pointer;
+}
+
+
+.transparentContent {
+  background: rgb(0,0,0,0.7);
+}
+
+.box{
+  box-model: border-box;
+  border: 2px solid transparent;
+  background-clip:padding-box;
+}
+
+.missionContent {
+  padding: 6px;
+}
+
+.clickAllow {
+  pointer-events: auto;
+  z-index: 100;
+}

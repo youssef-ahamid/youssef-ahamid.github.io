@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pride</title>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel = "stylesheet"  type = "text/css" href = "style.css" />
+    </head>
+    <body scroll='no'>
+        <!-- main page -->
+        <section id = "home" class = "main-page bg">
+            <!-- navigation -->
+            <nav>
+                <ul>
+                    <li><a class="navbar text" href = "#home">Home</a></li>
+                    <li><a class="navbar text" href = "#about">About</a></li>
+                    <li><a class="navbar text" href = "#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class = "page-content">
+                <img src="images/title.svg">
+                <div class = "start-button-container">
+                    <a class = "start-button text" href = "#choose_POV" type="button">Start!</a>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------------------------------------------------------------------- -->
+        <!-- about page -->
+        <section  id = "about" class  = "about-page bg">
+            <nav>
+                <ul>
+                    <li><a class="navbar text" href = "#home">Home</a></li>
+                    <li><a class="navbar text" href = "#about">About</a></li>
+                    <li><a class="navbar text" href = "#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class = "about-page-content">
+                <p class="about-text">
+                    Are you a parent that might not know how to react to your child coming out? Or are you someone who just wants to be informed on the experiences of the LGBTQ+ community? Join this family in the interactive comic “Pride (And How To React To Your Child Coming Out)”!
+                </p>
+                <p class="about-text">
+                    The plot tells the story of a young male who happily embraces his identity as a homosexual man; however, he is conflicted because he still does not know how to tell his parents. After finding a poster for an LGBTQ+ community party in his bedroom, the parents confront their son and demand to know the truth. The user is given the choice to play in either the boy's or the parents' perspective, and your choices will affect how the plot will play out. In addition, there are some hidden sound effects that can be played throughout the comic when clicked on, so don’t do to the next panel unless you’ve found all!
+                </p>
+                <p class="about-text"> 
+                    Will you be conservative or be accepting of your son? Will you choose to tell the truth or lie about your identity? We shall find out! Well, what are you waiting for? Go to the Home page and press “Start Comic” now!
+                </p>
+            </div>
+        </section>
+        <!-- Contact page which has authors' emails -->
+        <section id = "contacts" class  = "contact-page bg">
+            <nav>
+                <ul>
+                    <li><a class="navbar text" href = "#home">Home</a></li>
+                    <li><a class="navbar text" href = "#about">About</a></li>
+                    <li><a class="navbar text" href = "#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class = "contact-page-content">
+                <p class = "contact-text">Our contacts</p>
+                <div class = "authors">
+                    <p class = "email-info">Katie Ferreol: chiefdrawer@pride.com</p>
+                    <p class = "email-info">Yossef Abdelhamid: storyteller@pride.com</p>
+                    <p class = "email-info">Yusra Khan: segniorengineer@pride.com</p>
+                    <p class = "email-info">Nurgazy Seidaliev: webdeveloper@pride.com</p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- choose POV page -->
+        <section id = "choose_POV" class="bg">
+            <div class="two-img">
+                <a id="pov1" class="image" href="#scene1"><img src="images/character1.svg"></a>
+                <a id="pov2" class="image" href="#scene1pov"><img src="images/character2.svg"></a>
+            </div>
+            <div style="margin-top: 2%">
+                <span class = "caption">Boy's POV</span>
+                <span class = "caption">Parents' POV</span>
+            </div>
+        </section>
+        <!-- scene1 -->
+        <section id = "scene1" class="bg">
+            <div class="page-content"><object id="panel4" type="image/svg+xml" data="images/panel4.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene2" >Next</a>
+            </div>
+            <audio id="s-ring">
+                <source src="sounds/ring.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-car">
+                <source src="sounds/car.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene2 -->
+        <section id = "scene2" class="bg">
+            <div class="page-content"><object id="panel5" type="image/svg+xml" data="images/panel5.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene3" >Next</a>
+            </div>
+            <audio id="s-party">
+                <source src="sounds/party.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+
+        <!-- scene3 -->
+        <section id = "scene3" class="bg">
+            <div class="page-content"><object id="panel6" type="image/svg+xml" data="images/panel6.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#decision" >Next</a>
+            </div>
+        </section>
+        
+        <!-- decision -->
+        <section id = "decision" class="bg">
+            <div class="page-content"><object type="image/svg+xml" data="images/decision2.svg"></object></div>
+            <a class = "option-one-button button-choice text"  href = "#scene4a" >Lie and don't tell them</a>
+            <a class = "option-two-button button-choice text"  href = "#scene4b" >Tell them the truth</a>         
+        </section>
+
+        <!-- scene4a -->
+        <section id = "scene4a" class="bgd1">
+            <div class="page-content"><object id="Cpanel1" type="image/svg+xml" data="images/Cpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5a" >Next</a>
+            </div>
+            <audio id="s-heart">
+                <source src="sounds/heart.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene4b -->
+        <section id = "scene4b" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Dpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5b" >Next</a>
+            </div> 
+        </section>
+
+        <!-- scene5a -->
+        <section id = "scene5a" class="bgd1">
+            <div class="page-content"><object id="Cpanel" type="image/svg+xml" data="images/Apanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene6a" >Next</a>
+            </div> 
+            <audio id="s-phone2">
+                <source src="sounds/phone.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene5b -->
+        <section id = "scene5b" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene6b" >Next</a>
+            </div> 
+        </section>
+
+        <!-- scene6a -->
+        <section id = "scene6a" class="bgd2">
+            <div class="page-content"><object id="Cpanel2" type="image/svg+xml" data="images/Cpanel2.svg"></object></div>    
+            <div class = "option-button-container">
+                <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
+                <a class = "button-choice text"  href = "#home" >Home Page</a>
+            </div>
+            <audio id="s-knock2">
+                <source src="sounds/knock.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-owl">
+                <source src="sounds/owl.mp3" type="audio/mpeg">
+            </audio>                
+        </section>
+
+        <!-- scene6b -->
+        <section id = "scene6b" class="bgl2">
+            <div class="page-content"><object id="Dpanel2" type="image/svg+xml" data="images/Dpanel2.svg"></object></div>    
+            <div class = "option-button-container">
+                <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
+                <a class = "button-choice text"  href = "#home" >Home Page</a>
+            </div>
+            <audio id="s-parade">
+                <source src="sounds/parade.mp3" type="audio/mpeg">
+            </audio>                
+        </section>
+
+
+
+
+        <!-- POV 2 scenes -->
+
+        <!-- scene1 -->
+        <section id = "scene1pov" class="bg">
+            <div class="page-content"><object id="panel1" type="image/svg+xml" data="images/panel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene2pov" >Next</a>
+            </div>
+            <audio id="s-radio">
+                <source src="sounds/radio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene2 -->
+        <section id = "scene2pov" class="bg">
+            <div class="page-content"><object id="panel2" type="image/svg+xml" data="images/panel2.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene3pov" >Next</a>
+            </div>
+            <audio id="s-paper">
+                <source src="sounds/paper.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+
+        <!-- scene3 -->
+        <section id = "scene3pov" class="bg">
+            <div class="page-content"><object type="image/svg+xml" data="images/panel3.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#decisionpov" >Next</a>
+            </div>
+        </section>
+        
+        <!-- decision -->
+        <section id = "decisionpov" class="bg">
+            <div class="page-content"><object type="image/svg+xml" data="images/decision1.svg"></object></div>
+            <a class = "option-one-button button-choice text"  href = "#scene4apov" >Be unsupportive and ridicule him</a>
+            <a class = "option-two-button button-choice text"  href = "#scene4bpov" >Accept and embrace him</a>         
+        </section>
+
+
+        <!-- scene4a -->
+        <section id = "scene4apov" class="bgd1">
+            <div class="page-content"><object id="Apanel1" type="image/svg+xml" data="images/Apanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5apov" >Next</a>
+            </div> 
+            <audio id="s-phone">
+                <source src="sounds/phone.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene4b -->
+        <section id = "scene4bpov" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel1.svg"></object></div>
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene5bpov" >Next</a>
+            </div> 
+        </section>
+
+        <!-- scene5a -->
+        <section id = "scene5apov" class="bgd1">
+            <div class="page-content"><object id="Apanel2" type="image/svg+xml" data="images/Apanel2.svg"></object></div>    
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene6apov" >Next</a>
+            </div>
+            <audio id="s-knock">
+                <source src="sounds/knock.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene5b -->
+        <section id = "scene5bpov" class="bgl1">
+            <div class="page-content"><object type="image/svg+xml" data="images/Bpanel2.svg"></object></div>    
+            <div class = "next-button-container">
+                <a class = "next-button text"  href = "#scene6bpov" >Next</a>
+            </div>
+                
+        </section>
+
+        <!-- scene6a -->
+        <section id = "scene6apov" class="bgd2">
+            <div class="page-content"><object id="Apanel3" type="image/svg+xml" data="images/Apanel3.svg"></object></div>    
+            <div class = "option-button-container">
+                <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
+                <a class = "button-choice text"  href = "#home" >Home Page</a>
+            </div>
+            <audio id="s-rain">
+                <source src="sounds/rain.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-dog">
+                <source src="sounds/dog.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- scene6b -->
+        <section id = "scene6bpov" class="bgl2">
+            <div class="page-content"><object id="Bpanel3" type="image/svg+xml" data="images/Bpanel3.svg"></object></div>    
+            <div class = "option-button-container">
+                <a class = "button-choice text"  href = "#choose_POV" >Start Over</a>
+                <a class = "button-choice text"  href = "#home" >Home Page</a>
+            </div>
+            <audio id="s-haha">
+                <source src="sounds/laughing.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="s-dog2">
+                <source src="sounds/dog.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <script src="script.js"></script>
+
+
+        
+    </body>
+
+</html>
